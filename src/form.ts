@@ -37,6 +37,7 @@ export function wireLeadForm(): void {
       elapsed_ms: Date.now() - t0,
     }
 
+    const submitLabel = submitBtn.innerHTML
     submitBtn.disabled = true
     submitBtn.textContent = 'Sending...'
 
@@ -50,7 +51,8 @@ export function wireLeadForm(): void {
       if (res.ok) {
         form.hidden = true
         success.hidden = false
-        success.scrollIntoView({ behavior: 'smooth', block: 'center' })
+        const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+        success.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'center' })
         return
       }
 
@@ -69,7 +71,7 @@ export function wireLeadForm(): void {
         `<a href="mailto:${ADMIN_MAILTO}?subject=${subject}&body=${body}">send an email</a>.`
     } finally {
       submitBtn.disabled = false
-      submitBtn.textContent = 'Send message'
+      submitBtn.innerHTML = submitLabel
     }
   })
 }
