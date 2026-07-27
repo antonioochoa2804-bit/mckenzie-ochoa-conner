@@ -1,0 +1,23 @@
+{
+  "name": "mckenzie-ochoa-conner",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "qr": "node scripts/generate-qr.mjs",
+    "flyers": "node scripts/render-flyers.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/fraunces": "^5.2.0",
+    "@fontsource-variable/nunito-sans": "^5.2.0"
+  },
+  "devDependencies": {
+    "playwright": "^1.54.0",
+    "qrcode": "^1.5.4",
+    "typescript": "^5.6.0",
+    "vite": "^6.0.0"
+  }
+}

@@ -1,0 +1,38 @@
+/* Design tokens: palette from McKenzie's swatches, warm coastal + earthy. */
+:root {
+  --c-blue: #afccd1;
+  --c-sand: #e0c3a4;
+  --c-cream: #f4ece4;
+  --c-sage: #b6b791;
+  --c-green: #e0e2cb;
+  --c-brown: #896447;
+  --c-ink: #3f4437;
+  --c-ink-soft: #5c6050;
+  --c-white: #fffdf9;
+  --c-error: #a4553f;
+
+  --font-display: 'Fraunces Variable', Georgia, serif;
+  --font-body: 'Nunito Sans Variable', 'Segoe UI', sans-serif;
+
+  --size-h1: clamp(1.9rem, 4.5vw, 3.1rem);
+  --size-h2: clamp(1.5rem, 3vw, 2.1rem);
+  --size-h3: 1.15rem;
+  --size-body: 1.0625rem;
+  --size-small: 0.875rem;
+
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2.5rem;
+  --space-5: 4rem;
+  --space-6: 6rem;
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 28px;
+  --radius-blob: 58% 42% 55% 45% / 50% 58% 42% 50%;
+
+  --shadow-soft: 0 8px 30px rgba(63, 68, 55, 0.08);
+  --container: 68rem;
+  --container-narrow: 44rem;
+}

@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.secrets
+.DS_Store
+flyers/out/*.pdf
+supabase/.temp/
+supabase/.branches/

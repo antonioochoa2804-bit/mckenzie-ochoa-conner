@@ -1,0 +1,178 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--size-body);
+  line-height: 1.6;
+  color: var(--c-ink);
+  background: var(--c-white);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 560;
+  line-height: 1.15;
+  color: var(--c-ink);
+  margin: 0 0 var(--space-2);
+}
+
+h1 {
+  font-size: var(--size-h1);
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  font-size: var(--size-h2);
+  position: relative;
+  display: inline-block;
+  margin-bottom: var(--space-3);
+}
+
+h3 {
+  font-size: var(--size-h3);
+}
+
+p {
+  margin: 0 0 var(--space-2);
+}
+
+ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+a {
+  color: var(--c-brown);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--space-3);
+}
+
+.container.narrow {
+  max-width: var(--container-narrow);
+}
+
+.section {
+  padding: var(--space-5) 0;
+}
+
+.section-tint {
+  background: var(--c-green);
+}
+
+.section-warm {
+  background: var(--c-cream);
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: var(--c-ink);
+  color: var(--c-white);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+.btn {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.85rem 2rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.btn-primary {
+  background: var(--c-brown);
+  color: var(--c-white);
+  box-shadow: var(--shadow-soft);
+}
+
+.btn-primary:hover {
+  background: #74533a;
+  transform: translateY(-1px);
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: wait;
+  transform: none;
+}
+
+/* Organic blob accent behind section headings */
+.heading-shape {
+  position: absolute;
+  width: 2.6em;
+  height: 2.6em;
+  left: -0.9em;
+  top: -0.75em;
+  z-index: -1;
+  border-radius: var(--radius-blob);
+  opacity: 0.55;
+}
+
+.shape-blue {
+  background: var(--c-blue);
+}
+
+.shape-sand {
+  background: var(--c-sand);
+}
+
+.shape-sage {
+  background: var(--c-sage);
+  border-radius: 45% 55% 52% 48% / 58% 44% 56% 42%;
+}
+
+.shape-green {
+  background: var(--c-green);
+  border-radius: 52% 48% 44% 56% / 46% 54% 46% 54%;
+  opacity: 0.9;
+}
+
+.badge {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  background: var(--c-white);
+  border-radius: var(--radius-md);
+  padding: 0.7rem 1.2rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.badge small {
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: var(--c-ink-soft);
+}
