@@ -9,6 +9,12 @@ html {
   scroll-padding-top: calc(var(--header-h) + 1rem);
 }
 
+/* Safety net: decorative shapes must never create sideways scroll */
+html,
+body {
+  overflow-x: clip;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -183,6 +189,7 @@ img {
   justify-content: center;
   gap: 0.5rem;
   white-space: nowrap;
+  max-width: 100%;
   font-family: var(--font-body);
   font-weight: 800;
   font-size: 1rem;
@@ -241,6 +248,15 @@ img {
 .btn-lg {
   padding: 1.05rem 2.4rem;
   font-size: 1.0625rem;
+}
+
+/* Small phones: long labels wrap inside the pill instead of overflowing */
+@media (max-width: 420px) {
+  .btn-lg {
+    white-space: normal;
+    text-align: center;
+    padding: 0.95rem 1.6rem;
+  }
 }
 
 .btn-sm {

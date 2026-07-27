@@ -27,6 +27,16 @@
   gap: 0.7rem;
   text-decoration: none;
   color: var(--c-ink);
+  min-width: 0;
+  flex: 1;
+}
+
+.brand-text {
+  min-width: 0;
+}
+
+.site-header .btn {
+  flex: none;
 }
 
 .brand-mark {
@@ -46,15 +56,22 @@
 }
 
 .brand-name {
+  display: block;
   font-family: var(--font-display);
   font-weight: 600;
   font-size: clamp(0.95rem, 0.8rem + 0.7vw, 1.05rem);
-  line-height: 1.1;
-  white-space: nowrap;
+  line-height: 1.15;
+}
+
+@media (min-width: 420px) {
+  .brand-name {
+    white-space: nowrap;
+  }
 }
 
 .brand-tag {
   display: none;
+  white-space: nowrap;
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -62,7 +79,7 @@
   color: var(--c-ink-soft);
 }
 
-@media (min-width: 560px) {
+@media (min-width: 600px) {
   .brand-tag {
     display: block;
   }
