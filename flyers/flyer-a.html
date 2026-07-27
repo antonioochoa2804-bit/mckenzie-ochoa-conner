@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Flyer A: warm minimal</title>
+  <link rel="stylesheet" href="flyer.css" />
+  <style>
+    /* Layout A: warm minimal, big headline, lots of cream air */
+    .page { background: var(--c-cream); justify-content: space-between; }
+    .blob-1 { width: 5.5in; height: 5.5in; background: var(--c-blue); opacity: 0.4; top: -2.4in; right: -2in; transform: rotate(15deg); }
+    .blob-2 { width: 3.6in; height: 3.6in; background: var(--c-sand); opacity: 0.45; bottom: -1.6in; left: -1.4in; border-radius: 45% 55% 60% 40% / 55% 45% 55% 45%; }
+    .content { position: relative; z-index: 1; display: flex; flex-direction: column; gap: 0.32in; height: 100%; }
+    h1 { font-size: 34pt; letter-spacing: -0.01em; max-width: 6.4in; }
+    .lede { font-size: 14.5pt; color: var(--c-ink-soft); max-width: 5.9in; line-height: 1.5; }
+    .spacer { flex: 1; }
+    .footer-bar { display: flex; justify-content: space-between; align-items: flex-end; gap: 0.3in; }
+    .who { font-size: 11pt; color: var(--c-ink-soft); max-width: 3in; }
+    .who .name { font-family: 'Fraunces', serif; font-size: 15pt; color: var(--c-ink); }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="content">
+      <!-- REVIEW: all flyer copy is placeholder draft -->
+      <p class="eyebrow">Hi! I'm McKenzie!</p>
+      <h1>Teacher-certified early childhood educator providing full-time nanny care</h1>
+      <p class="lede">Relationship-centered childcare rooted in early childhood education, play-based learning, and developmentally appropriate practice. Seeking one wonderful Whatcom County family who values a warm, mixed-age environment where children learn, play, and grow together.</p>
+      <div class="badges">
+        <span class="badge">WA State Teacher Certified<small>Elementary Ed, Visual Arts, ELL</small></span>
+        <span class="badge">STARS Certified<small>Early care and education</small></span>
+        <span class="badge">CPR and First Aid</span>
+      </div>
+      <div class="spacer"></div>
+      <div class="footer-bar">
+        <div class="who">
+          <p class="name">McKenzie Ochoa Conner</p>
+          <p>Bellingham, Washington</p>
+        </div>
+        <div class="qr-block">
+          <div class="qr-cta">
+            <strong>Scan to say hello</strong><br />
+            Learn about my approach and tell me about your family.
+            <div class="qr-url">antonioochoa2804-bit.github.io/mckenzie-ochoa-conner</div>
+          </div>
+          <img src="out/qr.svg" alt="QR code linking to McKenzie's website" />
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

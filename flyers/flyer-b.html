@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Flyer B: credentials-forward</title>
+  <link rel="stylesheet" href="flyer.css" />
+  <style>
+    /* Layout B: credentials-forward, structured two-band layout */
+    .page { background: var(--c-white); padding: 0; }
+    .band-top { background: var(--c-blue); padding: 0.6in 0.7in 0.5in; position: relative; overflow: hidden; }
+    .band-top .blob { width: 3in; height: 3in; background: var(--c-cream); opacity: 0.35; top: -1.4in; right: -1in; }
+    .band-top h1 { font-size: 27pt; max-width: 6.2in; position: relative; }
+    .band-top .eyebrow { margin-bottom: 0.12in; }
+    .band-main { padding: 0.45in 0.7in; flex: 1; display: flex; flex-direction: column; gap: 0.3in; }
+    .cred-list { display: grid; gap: 0.18in; }
+    .cred { display: flex; gap: 0.18in; align-items: flex-start; }
+    .cred-dot { flex: none; width: 0.42in; height: 0.42in; border-radius: 58% 42% 55% 45% / 50% 58% 42% 50%; margin-top: 0.03in; }
+    .cred h2 { font-size: 13.5pt; }
+    .cred p { font-size: 10.5pt; color: var(--c-ink-soft); line-height: 1.45; max-width: 5.6in; }
+    .band-bottom { background: var(--c-green); padding: 0.4in 0.7in; display: flex; justify-content: space-between; align-items: center; }
+    .band-bottom .name { font-family: 'Fraunces', serif; font-size: 14pt; }
+    .band-bottom .loc { font-size: 10.5pt; color: var(--c-ink-soft); }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- REVIEW: all flyer copy is placeholder draft -->
+    <div class="band-top">
+      <div class="blob"></div>
+      <p class="eyebrow">Hi! I'm McKenzie!</p>
+      <h1>Teacher-Certified Early Childhood Educator Providing Full-Time Nanny Care</h1>
+    </div>
+    <div class="band-main">
+      <div class="cred-list">
+        <div class="cred">
+          <div class="cred-dot" style="background: var(--c-blue);"></div>
+          <div>
+            <h2>WA State Teacher Certified</h2>
+            <p>Endorsed in Elementary Education, Visual Arts, and English Language Learners. Years of classroom experience in Whatcom County and at a bilingual school in Mexico.</p>
+          </div>
+        </div>
+        <div class="cred">
+          <div class="cred-dot" style="background: var(--c-sand);"></div>
+          <div>
+            <h2>STARS Certified</h2>
+            <p>Washington State early care and education training, focused on the development and safety of young children.</p>
+          </div>
+        </div>
+        <div class="cred">
+          <div class="cred-dot" style="background: var(--c-sage);"></div>
+          <div>
+            <h2>CPR and First Aid Certified</h2>
+            <p>Current certification, calm in the moments that matter.</p>
+          </div>
+        </div>
+        <div class="cred">
+          <div class="cred-dot" style="background: var(--c-green);"></div>
+          <div>
+            <h2>A warm, mixed-age environment</h2>
+            <p>My little one joins us most days, creating a small mixed-age setting where children build empathy, communication, and belonging through play.</p>
+          </div>
+        </div>
+      </div>
+      <div class="qr-block" style="margin-top: auto;">
+        <img src="out/qr.svg" alt="QR code linking to McKenzie's website" />
+        <div class="qr-cta">
+          <strong>Scan to learn more and get in touch</strong><br />
+          Tell me a little about your family and the care you are looking for.
+          <div class="qr-url">antonioochoa2804-bit.github.io/mckenzie-ochoa-conner</div>
+        </div>
+      </div>
+    </div>
+    <div class="band-bottom">
+      <span class="name">McKenzie Ochoa Conner</span>
+      <span class="loc">Full-time nanny care · Bellingham, Washington</span>
+    </div>
+  </div>
+</body>
+</html>

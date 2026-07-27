@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Flyer C: story-led</title>
+  <link rel="stylesheet" href="flyer.css" />
+  <style>
+    /* Layout C: story-led with pull quote */
+    .page { background: var(--c-cream); }
+    .blob-1 { width: 4.6in; height: 4.6in; background: var(--c-sage); opacity: 0.3; bottom: -2in; right: -1.8in; }
+    .blob-2 { width: 3in; height: 3in; background: var(--c-sand); opacity: 0.4; top: -1.2in; left: -1.2in; border-radius: 45% 55% 60% 40% / 55% 45% 55% 45%; }
+    .content { position: relative; z-index: 1; display: flex; flex-direction: column; gap: 0.28in; height: 100%; }
+    h1 { font-size: 24pt; max-width: 6.4in; }
+    .pull-quote { font-family: 'Fraunces', serif; font-style: italic; font-size: 19pt; line-height: 1.35; color: var(--c-brown); border-left: 4px solid var(--c-sand); padding-left: 0.25in; max-width: 6in; margin: 0.1in 0; }
+    .story { font-size: 11.5pt; line-height: 1.55; color: var(--c-ink-soft); max-width: 6.3in; }
+    .story strong { color: var(--c-ink); }
+    .spacer { flex: 1; }
+    .bottom { display: flex; justify-content: space-between; align-items: flex-end; gap: 0.3in; }
+    .creds { font-size: 9.5pt; color: var(--c-ink-soft); max-width: 3.1in; line-height: 1.5; }
+    .creds .name { font-family: 'Fraunces', serif; font-size: 14pt; color: var(--c-ink); font-style: normal; }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="content">
+      <!-- REVIEW: all flyer copy is placeholder draft -->
+      <p class="eyebrow">Hi! I'm McKenzie!</p>
+      <h1>Teacher-certified early childhood educator providing full-time nanny care</h1>
+      <p class="pull-quote">"Children thrive when the adults around them are calm, consistent, and genuinely delighted by who they are."</p>
+      <p class="story">After years of classroom teaching, from elementary school here in Whatcom County to a bilingual school in Mexico, I'm bringing everything I love about education into full-time nanny care for one local family.</p>
+      <p class="story"><strong>My little one will join us most days,</strong> creating a small mixed-age environment where our children learn and grow together. Drawing on my background in early childhood education and mixed-age classrooms, I provide individualized, developmentally appropriate care while fostering empathy, communication, and a sense of belonging through peer bonding and play.</p>
+      <p class="story">Seeking a wonderful family who values a warm, mixed-age environment where children learn, play, and grow together.</p>
+      <div class="spacer"></div>
+      <div class="bottom">
+        <div class="creds">
+          <p class="name">McKenzie Ochoa Conner</p>
+          <p>Bellingham, Washington<br />WA State Teacher Certified (Elem Ed, Visual Arts, ELL) · STARS · CPR and First Aid</p>
+        </div>
+        <div class="qr-block">
+          <div class="qr-cta">
+            <strong>Scan to say hello</strong>
+            <div class="qr-url">antonioochoa2804-bit.github.io/mckenzie-ochoa-conner</div>
+          </div>
+          <img src="out/qr.svg" alt="QR code linking to McKenzie's website" />
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

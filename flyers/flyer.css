@@ -1,0 +1,126 @@
+/* Shared styles for the three US Letter flyers. */
+@font-face {
+  font-family: 'Fraunces';
+  src: url('../node_modules/@fontsource-variable/fraunces/files/fraunces-latin-wght-normal.woff2') format('woff2-variations');
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url('../node_modules/@fontsource-variable/nunito-sans/files/nunito-sans-latin-wght-normal.woff2') format('woff2-variations');
+  font-weight: 200 1000;
+}
+
+:root {
+  --c-blue: #afccd1;
+  --c-sand: #e0c3a4;
+  --c-cream: #f4ece4;
+  --c-sage: #b6b791;
+  --c-green: #e0e2cb;
+  --c-brown: #896447;
+  --c-ink: #3f4437;
+  --c-ink-soft: #5c6050;
+  --c-white: #fffdf9;
+  --blob: 58% 42% 55% 45% / 50% 58% 42% 50%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html,
+body {
+  width: 8.5in;
+  height: 11in;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  color: var(--c-ink);
+  background: var(--c-white);
+  overflow: hidden;
+}
+
+.page {
+  position: relative;
+  width: 8.5in;
+  height: 11in;
+  padding: 0.7in;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+h1,
+h2,
+.display {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 560;
+  line-height: 1.12;
+}
+
+.eyebrow {
+  font-family: 'Fraunces', Georgia, serif;
+  font-style: italic;
+  font-size: 17pt;
+  color: var(--c-brown);
+}
+
+.blob {
+  position: absolute;
+  border-radius: var(--blob);
+  z-index: 0;
+}
+
+.qr-block {
+  display: flex;
+  align-items: center;
+  gap: 0.25in;
+}
+
+.qr-block img {
+  width: 1.55in;
+  height: 1.55in;
+  background: #fff;
+  padding: 0.08in;
+  border-radius: 10px;
+}
+
+.qr-cta {
+  font-size: 13pt;
+  line-height: 1.4;
+  max-width: 3.6in;
+}
+
+.qr-cta strong {
+  font-size: 14pt;
+}
+
+.qr-url {
+  font-size: 9.5pt;
+  color: var(--c-ink-soft);
+  word-break: break-all;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.12in;
+}
+
+.badge {
+  background: var(--c-white);
+  border-radius: 10px;
+  padding: 0.09in 0.16in;
+  font-size: 9.5pt;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(63, 68, 55, 0.1);
+}
+
+.badge small {
+  display: block;
+  font-weight: 400;
+  color: var(--c-ink-soft);
+  font-size: 8pt;
+}
